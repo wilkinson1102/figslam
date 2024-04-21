@@ -16,6 +16,8 @@ const CursorChat = ({
     });
   };
 
+  const isDefaultMessage = cursorState.message === "test";
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       setCursorState({
